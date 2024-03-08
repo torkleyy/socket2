@@ -435,7 +435,6 @@ pub struct TcpKeepalive {
         target_os = "redox",
         target_os = "solaris",
         target_os = "nto",
-        target_os = "espidf",
         target_os = "vita",
         target_os = "haiku",
     )))]
@@ -446,7 +445,6 @@ pub struct TcpKeepalive {
         target_os = "solaris",
         target_os = "windows",
         target_os = "nto",
-        target_os = "espidf",
         target_os = "vita",
         target_os = "haiku",
     )))]
@@ -463,7 +461,6 @@ impl TcpKeepalive {
                 target_os = "redox",
                 target_os = "solaris",
                 target_os = "nto",
-                target_os = "espidf",
                 target_os = "vita",
                 target_os = "haiku",
             )))]
@@ -474,7 +471,6 @@ impl TcpKeepalive {
                 target_os = "solaris",
                 target_os = "windows",
                 target_os = "nto",
-                target_os = "espidf",
                 target_os = "vita",
                 target_os = "haiku",
             )))]
@@ -510,6 +506,7 @@ impl TcpKeepalive {
     #[cfg(any(
         target_os = "android",
         target_os = "dragonfly",
+        target_os = "espidf",
         target_os = "freebsd",
         target_os = "fuchsia",
         target_os = "illumos",
@@ -526,6 +523,7 @@ impl TcpKeepalive {
         doc(cfg(any(
             target_os = "android",
             target_os = "dragonfly",
+            target_os = "espidf",
             target_os = "freebsd",
             target_os = "fuchsia",
             target_os = "illumos",
@@ -554,6 +552,7 @@ impl TcpKeepalive {
         any(
             target_os = "android",
             target_os = "dragonfly",
+            target_os = "espidf",
             target_os = "freebsd",
             target_os = "fuchsia",
             target_os = "illumos",
@@ -572,6 +571,7 @@ impl TcpKeepalive {
             any(
                 target_os = "android",
                 target_os = "dragonfly",
+                target_os = "espidf",
                 target_os = "freebsd",
                 target_os = "fuchsia",
                 target_os = "illumos",
